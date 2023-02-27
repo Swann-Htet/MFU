@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+:root {
+    --primary-color: #CF0A0A;
+    --secondary-color: #EEEEEE;
+    --third-color: #000000;
+    --fourth-color: #DC5F00;
+}
+
+section {
+    height: 100vh;
+}
+
+body {
+    font-family: Sofia Sans;
+}
+
+/* Animation */
+
+   
+   @keyframes infinity-load {
+    to {
+     stroke-dashoffset: 10
+    }
+   }
+  
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: var(--secondary-color); 
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: var(--fourth-color); 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color); 
+}
+
+/* Owl Carousel */
+.ow-l, .ow-r {
+    display: none;
+}
+.owl-nav {
+    display: block;
+    position: absolute;
+}
+
+/* Top-Navbar */
+.top-navbar-velp  {
+    background: var(--primary-color)
+}
+.top-navbar-velp img {
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color);
+    margin: 0.5em;
+}
+.top-navbar-velp .container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.top-navbar-velp .container ul li{
+    display: inline;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color) !important;
+    font-family: Sofia Sans;
+    font-size: 1.1em;
+}
+.navbar .nav-link {
+    color: var(--secondary-color) !important;
+    transition: all ease-in-out 0.3s;
+}
+.navbar .nav-link:hover {
+    color: var(--third-color) !important;
+}
+.navbar .active {
+    color: var(--third-color);
+}
+
+/* Home */
+#home {
+    font-family: Sofia Sans;
+    cursor: pointer;
+}
+#home .title{
+    color: var(--secondary-color)
+}
+#home img {
+    height: 300px;
+    object-fit: cover;
+    transition: all ease-in-out 0.3s;
+}
+#home .home-slider:hover img {
+    transform: scale(1.1);
+}
+
+/* Home Main */
+#home-main {
+    background-image: url(../Photos/GP0011.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+#home-main .overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0000009A;
+}
+#home-main .brand-logo {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#home-main h3 {
+    text-align: center;
+    color: var(--secondary-color);
+}
+#home-main button {
+    background-color: var(--primary-color) !important;
+    font-size: 0.9em;
+    box-shadow: none;
+}
+.spinner .path {
+    animation: infinity-load 1.5s infinite cubic-bezier(.65,.05,.36,1)
+}
+
+/* Activities */
+#activity {
+    padding: 80px 0px;
+}
+#activity h3 {
+    text-align: center;
+    color: var(--third-color);
+}
+  
+/* About */
+#about {
+    padding: 90px 0px;
+}
+#about h3 {
+    color: var(--third-color);
+    text-align: center;
+}
+#about table {
+    cursor: pointer;
+}
+#about thead {
+    background-color: var(--fourth-color);
+    color: var(--secondary-color);
+}
+#about thead th{
+    border-right: 2px solid var(--secondary-color);
+}
+#about table button {
+    transition: all ease-in-out 0.3s;
+}
+#about table button:hover  {
+    background-color: #0000001A;
+    color: var(--secondary-color);
+}
+
+/* Contact */
+#contact {
+    padding: 90px 0px;
+}
+#contact h3 {
+    color: var(--third-color);
+    text-align: center;
+}
+#contact .card {
+    width: 190px;
+    height: 254px;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.5s;
+    margin: 50px
+}
+#contact .card:hover {
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+    background-color: var(--fourth-color);
+}
+#contact .card .blob {
+    height: 10px;
+    width: 75%;
+    border-radius: 0 0 30px 30px;
+    margin: 0 auto;
+    background-color: var(--fourth-color);
+    visibility: visible;
+    transition: all 0.3s;
+}
+#contact .card:hover .blob {
+    height: 0;
+}
+#contact .card .img {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background-image: url(../Photos/patric.jpg);
+    background-size: contain;
+    border: 2px solid var(--fourth-color);
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+#contact .card .img2 {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background-image: url(../Photos/valley.jpg);
+    background-size: contain;
+    border: 2px solid var(--fourth-color);
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+#contact .card .img3 {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background-image: url(../Photos/emerald.jpg);
+    background-size: contain;
+    border: 2px solid var(--fourth-color);
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+#contact .card .img4 {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background-image: url(../Photos/louis.jpg);
+    background-size: contain;
+    border: 2px solid var(--fourth-color);
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+#contact .card:hover .img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 10px 0 0;
+    margin: 0 auto;
+    background: url(../Photos/patric.jpg);
+    background-size: contain;
+    z-index: 99999;
+}
+#contact .card:hover .img2 {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 10px 0 0;
+    margin: 0 auto;
+    background: url(../Photos/valley.jpg);
+    background-size: contain;
+    z-index: 99999;
+}
+#contact .card:hover .img3 {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 10px 0 0;
+    margin: 0 auto;
+    background: url(../Photos/emerald.jpg);
+    background-size: contain;
+    z-index: 99999;
+}
+#contact .card:hover .img4 {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 10px 0 0;
+    margin: 0 auto;
+    background: url(../Photos/louis.jpg);
+    background-size: contain;
+    z-index: 99999;
+}
+#contact .card h2 {
+    padding: 15px 10px;
+    font-size: 25px;
+    transition: all 0.1s;
+    z-index: -99;
+    line-height: 17px;
+}
+#contact .card span {
+    font-size: 18px;
+}
+#contact .card:hover h2 {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    transition: all 0.5s;
+}
+#contact .card>p {
+    opacity: 0;
+    transition: all 0.75s;
+}
+#contact .card>p>svg {
+    padding: 3px;
+}
+#contact .card:hover>p {
+    position: absolute;
+    bottom: 15px;
+    left: 45px;
+    opacity: 1;
+    transition: all 0.1s;
+}
+#contact h2 {
+    color: var(--fourth-color);
+    z-index: 1 !important;
+}
+#contact .card p {
+    color: var(--secondary-color);
+}
+
+/* YouTube */
+#youtube {
+    padding: 90px 0px;
+}
+#youtube h3 {
+    color: var(--third-color);
+    text-align: center;
+}
+#youtube .container-yt iframe{
+    border: 5px solid var(--fourth-color);
+    border-radius: 20px;
+}
+   
